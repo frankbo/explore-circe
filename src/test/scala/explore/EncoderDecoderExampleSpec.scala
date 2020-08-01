@@ -1,10 +1,10 @@
 package explore
 
-import explore.Examples._
+import explore.EncoderDecoderExample._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-class ExamplesSpec extends AnyFlatSpec with Matchers {
+class EncoderDecoderExampleSpec extends AnyFlatSpec with Matchers {
   val tom: Person = Person("Tom", 25)
   val tomAsString: String = """{
     |  "name" : "Tom",

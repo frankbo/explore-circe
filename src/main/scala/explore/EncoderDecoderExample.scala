@@ -6,7 +6,7 @@ import io.circe.parser._
 import io.circe.syntax._
 import io.circe.literal._
 
-object Examples {
+object EncoderDecoderExample {
   final case class Person(name: String, age: Int)
 
   def encodePersonWithApply(person: Person): Json =
