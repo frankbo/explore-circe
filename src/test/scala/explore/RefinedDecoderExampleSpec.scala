@@ -16,11 +16,8 @@ class RefinedDecoderExampleSpec extends AnyFlatSpec with Matchers {
 }
 """
     val refinedData = decode[RefinedData](rawData).toOption.get
-    refinedData shouldBe RefinedData(NonEmptyString
-                                       .from("some string")
-                                       .toOption
-                                       .get,
-                                     12)
+    refinedData shouldBe
+      RefinedData(NonEmptyString.unsafeFrom("some string"), 12)
   }
 
   it should "be able to fail decoding when refined types are incorrect" in {
